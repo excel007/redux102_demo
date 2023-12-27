@@ -5,11 +5,11 @@ import { counterSelector } from '@/store/slices/counterSlice'
 type Props = {}
 
 export default function Navbar({ }: Props) {
-    const counterReducer = useSelector(counterSelector);
+    const count = useSelector(counterSelector);
     return (
         <div>counter from Navbar component :
             
-            {counterReducer.counter}
+            {count}
         </div>
     )
 }

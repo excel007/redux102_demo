@@ -39,7 +39,7 @@ const counterSlice = createSlice({
 });
 
 export default counterSlice.reducer;
-export const counterSelector = (state: RootState) => state.appReducer;
+export const counterSelector = (state: RootState) => state.counterReducer.counter;
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
 export const incrementAsync = createAsyncThunk(
